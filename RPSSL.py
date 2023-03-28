@@ -100,7 +100,7 @@ def compare_hand(mygo, yourgo):
     return result
 
 
-print('LETS PLAY A GAME !', '\n', 'BEST OF THREE !')
+print('LETS PLAY A GAME: ROCK, PAPER, SCISSORS, LIZARD, SPOCK !', '\n', 'BEST OF 7 !')
 while goes < 7:
 
     human = human_outcomes(possiblehand)
@@ -125,3 +125,6 @@ if computerwin > humanwin:
 
 if computerwin < humanwin:
     print(f'\n YOU WIN {humanwin}/{computerwin}')
+
+if computerwin == humanwin:
+    print('DRAW')
